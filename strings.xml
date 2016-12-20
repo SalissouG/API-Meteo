@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">meteoSki</string>
+
+    <string name="etatString">State of the station </string>
+    <string name="tempsString">weather</string>
+    <string name="temperatureMatinString">Temperature morning</string>
+    <string name="temperatureApString">Temperature afternoon</string>
+    <string name="vitesseString">wind speed</string>
+    <string name="niveauString">Snow level</string>
+    <string name="m">Station Name</string>
+
+</resources>

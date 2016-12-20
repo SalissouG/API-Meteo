@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#006699"
+    android:orientation="vertical"
+    >
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/nom_id"
+        android:text="@string/m"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/champs_id"
+        android:editable="true"
+        android:background="#FFFFFF" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valider_id"
+        android:onClick="buttonClicked"
+        android:text="Valider" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localiser"
+        android:id="@+id/localiser_id"
+        android:onClick=" localiserClicked"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECTIONNER"
+        android:onClick="selectClicked"
+        android:id="@+id/select_id"
+         />
+
+</LinearLayout>
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/etatString"
+        android:id="@+id/etat_id"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tempsString"
+        android:id="@+id/temps_id"
+        android:textColor="#FFFFFF"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperatureMatinString"
+        android:id="@+id/temperature_matin"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/temps_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperatureApString"
+        android:id="@+id/temperature_ap_id"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/temperature_matin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/vitesseString"
+        android:id="@+id/vitesse_id"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/temperature_ap_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/niveauString"
+        android:id="@+id/niveau_id"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/vitesse_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</LinearLayout>
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_id"
+        android:checked="false"
+        android:textColor="#FFFFFF"
+        android:text="Vibration"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/temperature_matin"
+        android:layout_alignEnd="@+id/temperature_matin" />
+
+    <ImageView
+        android:src="@drawable/neige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/valider_id"
+        android:layout_toEndOf="@+id/champs_id"
+        android:layout_toRightOf="@+id/champs_id" />
+
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>
